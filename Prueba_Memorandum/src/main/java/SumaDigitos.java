@@ -11,9 +11,12 @@ public class SumaDigitos {
     	System.out.println("Introduce el valor de N:");
     	int N = scanner.nextInt();
     	
+    	//calcula resultado de la suma y lo muestra por consola
     	
         int resultado = sumaDeDigitos(N);
         System.out.println("La suma de los dígitos de todos los números de 1 a " + N + " es: " + resultado);
+        
+        //cerrar scanner
         
         scanner.close();
     }

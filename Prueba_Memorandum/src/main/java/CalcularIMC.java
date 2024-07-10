@@ -3,21 +3,26 @@ import java.util.Scanner;
 public class CalcularIMC {
 
     public static void main(String[] args) {
-    	
-        // Ejemplo de uso de la clase IMCCalculadora
-    	
+    	   	
     	Scanner scanner = new Scanner(System.in);
+    	
+    	//introducir peso en KG
+    	
     	System.out.println("Introduce un peso en KG:");
     	double peso = scanner.nextDouble();
     	
-    	
+    	//Introducir altura en metros
     	
     	System.out.println("Introduce una altura en metros:");
     	double altura = scanner.nextDouble();
+    	
+    	//calcula el resultado y lo muestra por consola
     	  	
         String resultado = calcularIMC(peso, altura);
 
         System.out.println("El resultado del IMC es: " + resultado);
+        
+        //cerrar scanner
         
         scanner.close();
     }
